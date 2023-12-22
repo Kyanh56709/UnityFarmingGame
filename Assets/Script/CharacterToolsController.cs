@@ -14,6 +14,7 @@ public class CharacterToolsController : MonoBehaviour
         MainCharacterControl characterController;
         Rigidbody2D rgbd2d;
         Character character;
+
         [SerializeField] float offsetDistance = 1f;
         [SerializeField] float sizeOfInteractableArea = 0.4f;
         [SerializeField] private LayerMask playerMask;
@@ -21,7 +22,8 @@ public class CharacterToolsController : MonoBehaviour
         [SerializeField] TileMapReadController tileMapReadController;
         [SerializeField] float maxDistance = 3f;
         [SerializeField] CropsManager cropsManager;
-        [SerializeField] TileData plowableTiles;
+
+        public TileData plowableTiles;
         
         private Vector3Int selectedTilePosition;
         private bool selectable;
